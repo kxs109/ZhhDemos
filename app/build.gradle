@@ -54,6 +54,8 @@ dependencies {
     if (isNeedKotlinLearnModule.toBoolean()) {
         implementation project(':kotlinlearn')
     }
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+
     implementation project(path: ':commonlib')
 
 }
