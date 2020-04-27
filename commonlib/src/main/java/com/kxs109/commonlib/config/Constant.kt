@@ -2,6 +2,8 @@ package com.kxs109.commonlib.config
 
 // App路由表
 const val KotlinLearnMain="/kotlinLearn/main"
+const val ViewLearnMain="/viewLearn/main"
+const val SomeTestMain="/someTest/main"
 const val AppMain="/App/main"
 
 

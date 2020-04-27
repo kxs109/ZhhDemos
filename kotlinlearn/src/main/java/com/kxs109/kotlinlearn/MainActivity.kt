@@ -15,6 +15,7 @@ class MainActivity : BaseActivity() {
 
     override fun initView() {
         intent.getStringExtra("key1").logD()
+
     }
 
 }

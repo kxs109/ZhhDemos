@@ -1,2 +1,2 @@
-include ':app', ':kotlinlearn', ':commonlib', ':viewlearn', ':mvvmbase'/*, ':klearn'*/
+include ':app', ':kotlinlearn', ':commonlib', ':viewlearn', ':mvvmbase', ':sometest'/*, ':klearn'*/
 //project(':multitype1').projectDir = new File('multitype')

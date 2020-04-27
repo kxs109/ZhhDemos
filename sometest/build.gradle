@@ -1,4 +1,4 @@
-if (!isNeedKViewLearnModule.toBoolean()) {
+if (!isNeedSomeTestModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -18,8 +18,8 @@ android {
 
 
     defaultConfig {
-        if (!isNeedKViewLearnModule.toBoolean()) {
-            applicationId "com.kxs109.viewlearn"
+        if (!isNeedSomeTestModule.toBoolean()) {
+            applicationId "com.kxs109.sometest"
         }
         minSdkVersion 15
         targetSdkVersion 29
@@ -36,11 +36,11 @@ android {
         }
     }
 
-    resourcePrefix "view_learn"
+    resourcePrefix "some_test"
 
     sourceSets {
         main {
-            if (!isNeedKViewLearnModule.toBoolean()) {
+            if (!isNeedSomeTestModule.toBoolean()) {
                 manifest.srcFile 'src/main/module/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
@@ -58,10 +58,9 @@ android {
 }
 
 dependencies {
-    if (!isNeedKViewLearnModule.toBoolean()) {
+    if (!isNeedSomeTestModule.toBoolean()) {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
     }
     implementation project(':commonlib')
     kapt 'com.alibaba:arouter-compiler:1.2.2'
-
 }
