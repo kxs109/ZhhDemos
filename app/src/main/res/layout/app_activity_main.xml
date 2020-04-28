@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/MatchMatch.Vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/kotlinLearnBtn"
-        style="@style/layoutWMHW"
-        android:text="kotlin学习"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout style="@style/MatchWrap.Vertical">
 
-    <Button
-        android:id="@+id/viewLearnBtn"
-        style="@style/layoutWMHW"
-        android:text="viewLearn学习"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-    <Button
-        android:id="@+id/someTestBtn"
-        style="@style/layoutWMHW"
-        android:text="someTest学习"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/kotlinLearnBtn"
+            style="@style/MatchWrap.BtnT12C3"
+            android:text="@string/kotlin_learn" />
+
+        <Button
+            android:id="@+id/viewLearnBtn"
+            style="@style/MatchWrap.BtnT12C3"
+            android:text="@string/view_learn" />
+
+        <Button
+            android:id="@+id/someTestBtn"
+            style="@style/MatchWrap.BtnT12C3"
+            android:text="@string/some_test" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

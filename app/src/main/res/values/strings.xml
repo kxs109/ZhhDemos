@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ZhhDemos</string>
+    <string name="kotlin_learn">kotlin学习</string>
+    <string name="view_learn">view学习</string>
+    <string name="some_test">some_test</string>
 </resources>

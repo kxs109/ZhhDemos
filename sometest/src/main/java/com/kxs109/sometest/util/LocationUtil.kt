@@ -3,6 +3,7 @@ package com.kxs109.sometest.util
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
+import com.kxs109.commonlib.config.utils.ext.showLog
 import com.kxs109.commonlib.config.utils.ext.showToast
 
 class LocationUtil :LifecycleObserver{
@@ -15,10 +16,13 @@ class LocationUtil :LifecycleObserver{
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun startLocation(){
         "开始定位".showToast()
+//        println("开始定位")
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     fun stopLocation(){
         "停止定位".showToast()
+//        println("停止定位")
+
     }
 }

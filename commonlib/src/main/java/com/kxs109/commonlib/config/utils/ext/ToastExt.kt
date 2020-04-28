@@ -11,7 +11,7 @@ fun Context.longToast(content: String, duration: Int = Toast.LENGTH_LONG) {
 }
 fun String.showToast(context: Context=AppConfig.getApplication(), duration: Int = Toast.LENGTH_LONG){
     this.let {
-        Toast.makeText(context,this,duration)
+        Toast.makeText(context,this,duration).show()
     }
 }
 fun Context.longToast(@StringRes stringResId: Int, duration: Int = Toast.LENGTH_LONG) {

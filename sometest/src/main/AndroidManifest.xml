@@ -2,6 +2,6 @@
     package="com.kxs109.sometest">
 
     <application>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.MainActivity"/>
     </application>
 </manifest>
