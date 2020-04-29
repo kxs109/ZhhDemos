@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--p1的主题色按钮1-->
+    <style name="button_style_theme1_p1">
+        <item name="android:background">@drawable/drawable_button_theme1_p1_bg</item>
+        <item name="android:textColor">@color/color_selector_btn_theme1</item>
+        <item name="android:textSize">@dimen/text_t3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--p1的主题色按钮2-->
+    <style name="button_style_theme2_p1">
+        <item name="android:background">@drawable/drawable_button_theme2_p1_bg</item>
+        <item name="android:textColor">@color/color_selector_btn_theme2</item>
+        <item name="android:textSize">@dimen/text_t3</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--p2的主题色按钮1-->
+    <style name="button_style_theme1_p2">
+        <item name="android:background">@drawable/drawable_button_theme1_p2_bg</item>
+        <item name="android:textColor">@color/color_selector_btn_theme1_p2</item>
+        <item name="android:textSize">@dimen/text_t3</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--p2的主题色按钮1-->
+    <style name="button_style_theme2_p2">
+        <item name="android:background">@drawable/drawable_button_theme2_p2_bg</item>
+        <item name="android:textColor">@color/color_selector_btn_common</item>
+        <item name="android:textSize">@dimen/text_t3</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--项目通用按钮-->
+    <style name="button_style_common">
+        <item name="android:background">@drawable/drawable_button_common_bg</item>
+        <item name="android:textColor">@color/color_selector_btn_common</item>
+        <item name="android:textSize">@dimen/text_t3</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <style name="BtnX16">
+        <item name="android:layout_height">@dimen/x16</item>
+        <item name="android:layout_width">@dimen/x16</item>
+    </style>
+</resources>

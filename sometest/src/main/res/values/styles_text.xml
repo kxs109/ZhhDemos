@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    >
+    <!--··········文字样式···········-->
+
+    <!--p1主题色文字-->
+    <style name="text_color_theme_p1">
+        <item name="android:textColor">@color/color_theme1_p1</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--p2主题色文字-->
+    <style name="text_color_theme_p2">
+        <item name="android:textColor">@color/color_theme1_p2</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!--主要文字颜色-->
+    <style name="text_color_main">
+        <item name="android:textColor">@color/color_text_main</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--一般文字颜色-->
+    <style name="text_color_common">
+        <item name="android:textColor">@color/color_text_common</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--次要文字颜色-->
+    <style name="text_color_minor">
+        <item name="android:textColor">@color/color_text_minor</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--提示文字颜色-->
+    <style name="text_color_tips">
+        <item name="android:textColor">@color/color_text_tips</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--白色文字-->
+    <style name="text_color_white">
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:textColorHint">@color/color_a0a4b1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--··········p2-主题色-文字大小（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_theme_p2_t1" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_theme_p2_t2" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_theme_p2_t3" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_theme_p2_t4" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_theme_p2_t5" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_theme_p2_t6" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_theme_p2_t7" parent="@style/text_color_theme_p2">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+
+    <!--··········p1-主题色-文字大小（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_theme_p1_t1" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_theme_p1_t2" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_theme_p1_t3" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_theme_p1_t4" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_theme_p1_t5" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_theme_p1_t6" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_theme_p1_t7" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+    <!--··········-主要文字（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_main_t1" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_main_t2" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_main_t3" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_main_t4" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_main_t5" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_main_t6" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_main_t7" parent="@style/text_color_main">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+    <!--··········-一般文字（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_common_t1" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_common_t2" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_common_t3" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_common_t4" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_common_t5" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_common_t6" parent="@style/text_color_common">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_common_t7" parent="@style/text_color_theme_p1">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+    <!--··········-次要文字（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_minor_t1" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_minor_t2" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_minor_t3" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_minor_t4" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_minor_t5" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_minor_t6" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_minor_t7" parent="@style/text_color_minor">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+    <!--··········-提示文字（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_tips_t1" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_tips_t2" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_tips_t3" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_tips_t4" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_tips_t5" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_tips_t6" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_tips_t7" parent="@style/text_color_tips">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+    <!--··········-白色文字（参照UI视觉规范命名）··········-->
+    <!--顶部导航标题文字、标题文字、强调作用-->
+    <style name="text_style_white_t1" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--标题文字-->
+    <style name="text_style_white_t2" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t2</item>
+    </style>
+    <!--正文内容文字-->
+    <style name="text_style_white_t3" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t3</item>
+    </style>
+    <!--大多数文字、次要辅助文字-->
+    <style name="text_style_white_t4" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t4</item>
+    </style>
+    <!--辅助文字、标签栏文字-->
+    <style name="text_style_white_t5" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t5</item>
+    </style>
+    <!--一些注释和备注文字-->
+    <style name="text_style_white_t6" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t6</item>
+    </style>
+    <!--极少数文字-->
+    <style name="text_style_white_t7" parent="@style/text_color_white">
+        <item name="android:textSize">@dimen/text_t7</item>
+    </style>
+</resources>

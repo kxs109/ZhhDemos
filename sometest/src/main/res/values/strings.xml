@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SomeTest</string>
+    <string name="dialog_area_selection">请选择所在地区</string>
+    <string name="dialog_school_section_select">选择学段</string>
+    <string name="dialog_school_section_all_area">全国</string>
 </resources>
