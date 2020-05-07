@@ -62,5 +62,6 @@ dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
     }
     implementation project(':commonlib')
+    implementation project(':mvvmbase')
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="t13CommonBlack">
+    <item name="android:textSize">@dimen/t13</item>
+    <item name="android:textColor">@color/common_black</item>
+</style>
+</resources>

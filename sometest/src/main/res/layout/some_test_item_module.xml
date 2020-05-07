@@ -9,6 +9,7 @@
     </data>
 
     <Button
+        android:id="@+id/btn_item_module"
         android:text="item"
         style="@style/MatchWrap.BtnT12C3" />
 </layout>

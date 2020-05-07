@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BtnX16">
+        <item name="android:layout_height">@dimen/x16</item>
+        <item name="android:layout_width">@dimen/x16</item>
+    </style>
+</resources>

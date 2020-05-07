@@ -49,7 +49,15 @@ dependencies {
 
     api 'com.alibaba:arouter-api:1.5.0'
     kapt 'com.alibaba:arouter-compiler:1.2.2'
-    api project(path: ':mvvmbase')
-    api project(path: ':commondimen')
+    api project(path: ':commonUiFrame')
     api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+    //tab库@{link:https://github.com/H07000223/FlycoTabLayout}
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    api 'com.github.razerdp:BasePopup:2.2.2.2'
+    // Koin AndroidX Scope features
+    api 'org.koin:koin-androidx-scope:2.1.5'
+// Koin AndroidX ViewModel features
+    api 'org.koin:koin-androidx-viewmodel:2.1.5'
+    api 'com.google.code.gson:gson:2.8.5'
+
 }
