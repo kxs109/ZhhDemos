@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="view_sure">确定</string>
+    <string name="view_cancle">取消</string>
+    <string name="dialog_area_selection">请选择所在地区</string>
+    <string name="area_select_default">请选择</string>
+</resources>

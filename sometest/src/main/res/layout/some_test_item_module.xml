@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <data>
-
-        <variable
-            name="item"
-            type="String" />
-    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/iv_item_module"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="@dimen/x54"
+        android:layout_height="@dimen/x54"/>
 
     <Button
+        android:stateListAnimator="@null"
         android:id="@+id/btn_item_module"
-        android:text="item"
-        style="@style/MatchWrap.BtnT12C3" />
-</layout>
+        style="@style/MatchWrap.BtnT12C3"
+        android:text="item" />
+
+</LinearLayout>

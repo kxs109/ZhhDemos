@@ -3,8 +3,16 @@
 
     <!-- Your custom size defind by references, can be writted in anywhere, any module, any values/*.xml, for example: -->
     <dimen name="common_margin">@dimen/x15</dimen>
+    <dimen name="tool_bar_height">@dimen/x44</dimen>
+    <dimen name="button_height">@dimen/x44</dimen>
 
-    <!-- dp and sp values, must be defind in this file! -->
+    <dimen name="text_t1">@dimen/t20</dimen>
+    <dimen name="text_t2">@dimen/t18</dimen>
+    <dimen name="text_t3">@dimen/t16</dimen>
+    <dimen name="text_t4">@dimen/t15</dimen>
+    <dimen name="text_t5">@dimen/t14</dimen>
+    <dimen name="text_t6">@dimen/t12</dimen>
+    <dimen name="text_t7">@dimen/t10</dimen>
     <!-- view size,you can add if there is no one -->
     <dimen name="xm_60">-60dp</dimen>
     <dimen name="xm_30">-30dp</dimen>

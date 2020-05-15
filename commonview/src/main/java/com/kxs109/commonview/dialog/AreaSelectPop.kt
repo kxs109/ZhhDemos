@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.flyco.tablayout.SlidingTabLayout
+import com.flyco.tablayout.listener.OnTabSelectListener
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.kxs109.commonlib.config.utils.ext.fromJsonFile
@@ -134,9 +135,9 @@ class AreaSelectPop(
         listTitle.add(context.resources.getString(R.string.area_select_default))
         listTitle.add(context.resources.getString(R.string.area_select_default))
         listTitle.add(context.resources.getString(R.string.area_select_default))
+        mVp?.setScroll(false)
         mTabLayout?.setViewPager(mVp, listTitle.toTypedArray())
         updateTabTitleStatus()
-        mVp?.setScroll(false)
         mTabLayout?.setOnTabSelectListener(object : OnTabSelectListener {
             override fun onTabSelect(position: Int) {
                 if (position == 1) {

@@ -1,4 +1,4 @@
-if (!isNeedKotlinLearnModule.toBoolean()) {
+if (isModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -20,15 +20,17 @@ android {
     buildToolsVersion "29.0.3"
 
 
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
     defaultConfig {
-        if (!isNeedKotlinLearnModule.toBoolean()) {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        if (isModule.toBoolean()) {
             applicationId "com.kxs109.kotlinlearn"
         }
-        minSdkVersion 15
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
 
@@ -45,7 +47,7 @@ android {
 
     sourceSets {
         main {
-            if (!isNeedKotlinLearnModule.toBoolean()) {
+            if (isModule.toBoolean()) {
                 manifest.srcFile 'src/main/module/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
@@ -63,7 +65,7 @@ android {
 }
 
 dependencies {
-    if (!isNeedKotlinLearnModule.toBoolean()) {
+    if (isModule.toBoolean()) {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
 //        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 //        implementation 'androidx.appcompat:appcompat:1.1.0'

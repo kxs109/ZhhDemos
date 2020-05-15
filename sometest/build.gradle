@@ -1,4 +1,4 @@
-if (!isNeedSomeTestModule.toBoolean()) {
+if (isModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
@@ -13,18 +13,18 @@ kapt {
     }
 }
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
 
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     defaultConfig {
-        if (!isNeedSomeTestModule.toBoolean()) {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        if (isModule.toBoolean()) {
             applicationId "com.kxs109.sometest"
         }
-        minSdkVersion 15
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,11 +36,11 @@ android {
         }
     }
 
-    resourcePrefix "some_test"
+//    resourcePrefix "some_test"
 
     sourceSets {
         main {
-            if (!isNeedSomeTestModule.toBoolean()) {
+            if (isModule.toBoolean()) {
                 manifest.srcFile 'src/main/module/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
@@ -54,14 +54,14 @@ android {
             }
         }
     }
-
 }
 
 dependencies {
-    if (!isNeedSomeTestModule.toBoolean()) {
+    if (isModule.toBoolean()) {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
     }
     implementation project(':commonlib')
     implementation project(':mvvmbase')
+    implementation project(':commonview')
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }

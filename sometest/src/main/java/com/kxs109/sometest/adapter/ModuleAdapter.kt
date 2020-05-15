@@ -11,7 +11,12 @@ import com.kxs109.sometest.R
  */
 class ModuleAdapter(layoutResId: Int = R.layout.some_test_item_module) :
     BaseQuickAdapter<String, BaseViewHolder>(layoutResId) {
+    init {
+        addChildClickViewIds(R.id.btn_item_module, R.id.iv_item_module)
+        addChildLongClickViewIds(R.id.btn_item_module)
+    }
     override fun convert(holder: BaseViewHolder, item: String) {
         holder.setText(R.id.btn_item_module, item)
+
     }
 }

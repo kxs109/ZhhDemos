@@ -11,14 +11,15 @@ kapt {
     }
 }
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
     defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
         applicationId "com.example.zhhdemos"
-        minSdkVersion 15
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
@@ -48,13 +49,9 @@ dependencies {
 //    androidTestImplementation 'androidx.test:runner:1.2.0'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    if (isNeedKViewLearnModule.toBoolean()) {
+    if (!isModule.toBoolean()) {
         implementation project(':viewlearn')
-    }
-    if (isNeedKotlinLearnModule.toBoolean()) {
         implementation project(':kotlinlearn')
-    }
-    if (isNeedSomeTestModule.toBoolean()) {
         implementation project(':sometest')
     }
     kapt 'com.alibaba:arouter-compiler:1.2.2'

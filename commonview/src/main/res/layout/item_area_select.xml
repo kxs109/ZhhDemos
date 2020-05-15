@@ -17,5 +17,5 @@
 
     <TextView
         android:id="@+id/tv_item_area"
-        style="@style/t13CommonBlack" />
+        style="@style/text_style_common_t4" />
 </LinearLayout>

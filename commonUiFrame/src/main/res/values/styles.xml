@@ -32,4 +32,26 @@
     <style name="MatchWrap.Vertical">
         <item name="android:orientation">vertical</item>
     </style>
+
+
+
+
+
+    <!--￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥-->
+    <style name="MatchMatch.TextAllCaps">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MatchWrap.TextAllCaps">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="WrapMatch.TextAllCaps">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="WrapWrap.TextAllCaps">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
 </resources>
