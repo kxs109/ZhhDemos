@@ -17,6 +17,5 @@ class ModuleAdapter(layoutResId: Int = R.layout.some_test_item_module) :
     }
     override fun convert(holder: BaseViewHolder, item: String) {
         holder.setText(R.id.btn_item_module, item)
-
     }
 }
