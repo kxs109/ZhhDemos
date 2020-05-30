@@ -50,12 +50,12 @@ dependencies {
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     if (!isModule.toBoolean()) {
-        implementation project(':viewlearn')
-        implementation project(':kotlinlearn')
-        implementation project(':sometest')
+        implementation project(':module_viewLearn')
+        implementation project(':module_kotlinLearn')
+        implementation project(':module_someTest')
     }
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 
-    implementation project(path: ':libCommon')
+    implementation project(path: ':lib_common')
 
 }
