@@ -1,3 +1,5 @@
+include ':lib_ksyPlayer'
+include ':module_ksyplayer'
 rootProject.name='ZhhDemos'
 include ':app'
 include ':lib_mvvmBase'
