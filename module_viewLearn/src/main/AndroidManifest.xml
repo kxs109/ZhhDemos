@@ -3,7 +3,7 @@
     package="com.kxs109.viewlearn">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

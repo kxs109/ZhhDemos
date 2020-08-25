@@ -74,6 +74,7 @@ dependencies {
 
     }
     implementation project(':lib_common')
+    implementation project(':lib_mvvmBase')
 
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 }
