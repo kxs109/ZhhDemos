@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestServiceActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+<Button
+    android:onClick="prev"
+    android:text="播放上一首"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<Button
+    android:onClick="next"
+    android:text="播放下一首"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<Button
+    android:onClick="play"
+    android:text="播放"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<Button
+    android:onClick="pause"
+    android:text="暂停"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>

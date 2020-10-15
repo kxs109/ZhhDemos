@@ -60,7 +60,7 @@ dependencies {
     if (isModule.toBoolean()) {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
     }
-    implementation project(':lib_common')
+    api project(':lib_common')
     implementation project(':lib_mvvmBase')
     implementation project(':lib_commonView')
     kapt 'com.alibaba:arouter-compiler:1.2.2'

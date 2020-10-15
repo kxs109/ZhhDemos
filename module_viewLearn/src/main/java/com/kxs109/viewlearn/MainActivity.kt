@@ -9,8 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_learn_activity_main)
 
-        "sddd".sumBy {
+       /* "sddd".sumBy {
             it.toInt()
-        }
+        }*/
     }
+
 }
