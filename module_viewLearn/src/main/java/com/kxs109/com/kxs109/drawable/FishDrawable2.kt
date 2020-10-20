@@ -51,7 +51,7 @@ class FishDrawable2 : Drawable() {
         animator.duration = 2300
         animator.addUpdateListener {
             currentValue = (it.animatedValue as Int).toDouble()
-//            middleAngle=currentValue
+            middleAngle=currentValue
             invalidateSelf()
         }
         /*animator.addListener(object : AnimatorListenerAdapter() {
