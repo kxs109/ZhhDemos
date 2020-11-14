@@ -1,3 +1,4 @@
+include ':module_databindtest'
 include ':lib_ksyPlayer'
 include ':module_ksyplayer'
 rootProject.name='ZhhDemos'
