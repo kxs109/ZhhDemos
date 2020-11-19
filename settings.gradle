@@ -1,3 +1,7 @@
+include ':module_mvptest'
+include ':lib_mvpBase'
+include ':module_aidl_server_b'
+include ':module_aidl_client_a'
 include ':module_databindtest'
 include ':lib_ksyPlayer'
 include ':module_ksyplayer'
