@@ -11,14 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.kxs109.TestStrokeTextActivity">
+        <activity android:name="com.kxs109.gestureDetector.TestGestureDetectorActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity android:name="com.kxs109.TestStrokeTextActivity" />-->
+<!--        <activity android:name="com.kxs109.recyclerViewTest.TestRecyclerViewActivity" />-->
+        <!--        <activity android:name="com.kxs109.TestStrokeTextActivity" />-->
         <!--        <activity android:name=".TestAIDLActivity" />-->
     </application>
 
