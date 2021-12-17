@@ -38,26 +38,30 @@ private fun log(level: LogLevel, tag: String, content: String) {
 }
 
 fun String?.logV(tag: String = TAG) {
-    log(LogLevel.V, tag, this?:"null")
+    log(LogLevel.V, tag, this ?: "null")
 }
 
 fun String?.logD(tag: String = TAG) {
-    log(LogLevel.D, tag, this?:"null")
+    log(LogLevel.D, tag, this ?: "null")
 
 }
 
 fun String?.logI(tag: String = TAG) {
-    log(LogLevel.I, tag, this?:"null")
+    log(LogLevel.I, tag, this ?: "null")
 
 }
 
 fun String?.logW(tag: String = TAG) {
-    log(LogLevel.W, tag, this?:"null")
+    log(LogLevel.W, tag, this ?: "null")
 
 }
 
 fun String?.logE(tag: String = TAG) {
-    log(LogLevel.E, tag, this?:"null")
+    log(LogLevel.E, tag, this ?: "null")
 
 }
 
+fun Any?.logE(tag: String = TAG) {
+    log(LogLevel.E, tag, (this ?: "null").toString())
+
+}

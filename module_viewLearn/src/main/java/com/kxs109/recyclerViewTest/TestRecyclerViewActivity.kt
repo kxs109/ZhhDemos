@@ -1,5 +1,7 @@
 package com.kxs109.recyclerViewTest
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -19,11 +21,16 @@ class TestRecyclerViewActivity : AppCompatActivity() {
             addItemDecoration(DividerItemDecoration(this@TestRecyclerViewActivity,
                 DividerItemDecoration.VERTICAL))
         }
+        val options = BitmapFactory.Options()
+        options.inDensity = 320
+        options.inTargetDensity = 320
+
+        //图片所占内存= 图片高*inSampleSize*inTargetDensity/inDensity*图片宽*inSampleSize*inTargetDensity/inDensity
     }
 
     private fun initAdapterData(): MutableList<String> {
          list  = mutableListOf<String>().apply {
-            for (num in 0..99) {
+            for (num in 0..100) {
                 add("Sample${num}")
             }
         }
