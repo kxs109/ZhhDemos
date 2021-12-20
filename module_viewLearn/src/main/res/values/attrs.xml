@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <attr name="border_colors" format="reference"/>
+        <attr name="solid_color" format="reference"/>
+        <attr name="second_solid_color" format="reference"/>
+        <attr name="border_width" format="reference"/>
+    </declare-styleable>
+</resources>

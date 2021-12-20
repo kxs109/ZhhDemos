@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -18,14 +19,14 @@ import com.kxs109.viewlearn.R
  */
 class TestGestureDetectorActivity : AppCompatActivity(), View.OnTouchListener {
     private var mGestureDetector: GestureDetector? = null
-    private var textView: TextView? = null
+    private var iv: ImageView? = null
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test_gesture_detector)
-        textView = findViewById<TextView>(R.id.tv)
-        textView?.setOnTouchListener(this)
+        iv = findViewById(R.id.iv)
+        iv?.setOnTouchListener(this)
         initGestureDetector()
     }
 
@@ -51,8 +52,8 @@ class TestGestureDetectorActivity : AppCompatActivity(), View.OnTouchListener {
                 distanceX: Float,
                 distanceY: Float
             ): Boolean {
-                textView?.layout(((textView?.left?.toFloat()?:0f)+distanceX).toInt(), ((textView?.top?.toFloat()?:0f)+distanceY).toInt(),
-                    ((textView?.right?.toFloat()?:0f)+distanceX).toInt(), ((textView?.left?.toFloat()?:0f)+distanceY).toInt())
+                iv?.layout(((iv?.left?.toFloat()?:0f)+distanceX).toInt(), ((iv?.top?.toFloat()?:0f)+distanceY).toInt(),
+                    ((iv?.right?.toFloat()?:0f)+distanceX).toInt(), ((iv?.left?.toFloat()?:0f)+distanceY).toInt())
                 "zhh---onScroll>>>${distanceX}>>>${distanceY}".logE()
                 return false
             }
@@ -67,8 +68,8 @@ class TestGestureDetectorActivity : AppCompatActivity(), View.OnTouchListener {
                 velocityX: Float,
                 velocityY: Float
             ): Boolean {
-                textView?.x = velocityX
-                textView?.y = velocityY
+                iv?.x = velocityX
+                iv?.y = velocityY
                 "zhh---onFling>>>${velocityX}>>>${velocityY}".logE()
                 return false
             }
