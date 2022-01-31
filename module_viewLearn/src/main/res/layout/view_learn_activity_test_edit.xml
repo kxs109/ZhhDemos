@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+    <EditText
+        android:id="@+id/edittextNormal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left|top" />
+
+    <com.kxs109.editor.RichEditTextPro
+        android:id="@+id/edittextPro"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left|top" />
+
+    <TextView
+        android:id="@+id/test"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x17"
+        android:text="测试" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x17"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/server2Local"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="server2Local" />
+
+            <TextView
+                android:id="@+id/local2Server"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="local2Server" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
