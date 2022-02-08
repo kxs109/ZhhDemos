@@ -23,21 +23,21 @@ class MyEditTextView constructor(
         "kxs  onSelectionChanged: $selStart-----$selEnd>>>".logE()
         val b1 = selStart in 5..10 || selStart in 15..20
         val b2 = selEnd in 5..10 || selEnd in 15..20
-        if (b1 || b2){
-            if (10 < (text?.length?:0)){
-                if (b1) {
-                    setSelection(10, selEnd)
-                }else{
-                    setSelection(selStart, 10)
-                }
-            }else if (20 < (text?.length?:0)){
-                if (b1) {
-                    setSelection(20, selEnd)
-                }else{
-                    setSelection(selStart, 20)
-                }
-            }
-        }
+//        if (b1 || b2){
+//            if ((text?.length?:0) > 20){
+//                if (b1) {
+//                    setSelection(20, selEnd)
+//                }else{
+//                    setSelection(selStart, 20)
+//                }
+//            }else if ((text?.length?:0) > 10){
+//                if (b1) {
+//                    setSelection(10, selEnd)
+//                }else{
+//                    setSelection(selStart, 10)
+//                }
+//            }
+//        }
     }
 
 }
